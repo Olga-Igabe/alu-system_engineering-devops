@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Ceci n'est pas une page</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0f172a;
+      color: #e2e8f0;
+      font-family: Georgia, "Times New Roman", serif;
+      text-align: center;
+      padding: 2rem;
+    }
+    .frame {
+      border: 12px solid #b45309;
+      outline: 4px solid #78350f;
+      background: #fef3c7;
+      color: #1e293b;
+      padding: 3rem 2.5rem;
+      max-width: 520px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+      animation: swing 4s ease-in-out infinite;
+      transform-origin: top center;
+    }
+    @keyframes swing {
+      0%, 100% { transform: rotate(-2deg); }
+      50% { transform: rotate(2deg); }
+    }
+    .code {
+      font-size: 6rem;
+      font-weight: bold;
+      letter-spacing: 0.5rem;
+      color: #b45309;
+    }
+    h1 {
+      font-size: 1.8rem;
+      font-style: italic;
+      margin: 1rem 0;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    a {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      background: #1e293b;
+      color: #fef3c7;
+      text-decoration: none;
+      border-radius: 4px;
+      font-family: Arial, sans-serif;
+    }
+    a:hover { background: #b45309; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="code">404</div>
+    <h1>Ceci n'est pas une page</h1>
+    <p>Like Magritte's famous pipe, what you are looking at is only a picture of a page.
+       The real one has wandered off the gallery wall.</p>
+    <a href="/">Back to the gallery</a>
+  </div>
+</body>
+</html>
